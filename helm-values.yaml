@@ -1,0 +1,8 @@
+deploy:
+  postgresql:
+    enable: true
+kratos:
+  kratos:
+    development: true
+fqdn:
+  domain: paralus.local
