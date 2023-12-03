@@ -1,8 +1,18 @@
 deploy:
   postgresql:
     enable: true
+  contour:
+    enable: false
 kratos:
   kratos:
     development: true
 fqdn:
-  domain: paralus.local
+  domain: paralus.35.196.35.7.nip.io
+ingress:
+  enabled: true
+  className: "traefik"
+paralus:
+  initialize:
+    adminEmail: jdoe@acme.com
+    adminFirstName: John
+    adminLastName: Doe
